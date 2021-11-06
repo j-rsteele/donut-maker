@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+  <div class="header">
+    <div class="nav">
+      <button id="myBtn">Inspiration</button>
+      <button id="myBtn2">Creator</button>
+      <button id="myBtn3">About Me</button>
+</div>
+<h1>Donut Shop</h1>
+    <div class="image-container">
+      <img src="/lib/donut_img.jpg">
+    </div>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Inspiration for the game</h2>
+              </div>
+              <div class="modal-body">
+                <p>This game was inspired by the original Cookie Clicker Game</p>
+                <p>To play click the bake button until you reach 100 donuts to activate the auto click button. When you've earned enough donuts you can purchase
+                  auto clickers and multipliers. Auto clickers will automatically click for us every second, so we don't have to click manually, and
+                  donut multipliers increase the number of donuts made for each click.</p>
+                  <p><a href="https://cookie-clicker.co/" target="_blank">Original Cookie Clicker Game</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div id="myModal2" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="close">&times;</span>
+              <h2>Welcome to Fred the Baker Baking Company!</h2>
+            </div>
+            <div class="modal-body">
+              <p>You have been contracted by Fred the Baker Baking Company to take a concept, Donut Maker Clicker. Fred the Baker has been making
+                donuts forever and is finally ready to retire. He needs our help to keep his love of donuts alive. He wants you to create a game that uses button clicks to
+              create virtual donuts for the world to enjoy.</p>
+            </div>
+          </div>
+        </div>
+
+          <div id="myModal3" class="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>About Me</h2>
+              </div>
+              <div class="modal-body">
+                <p>Hi, my names Jenna Steele</p>
+                <p>Contact me:</p>
+                <p><a href="https://www.linkedin.com/in/j-steele1/">LinkedIn</a>
+                  <a href="https://github.com/j-rsteele">GitHub</a></p>
+              </div>
+            </div>
+          </div>
+    </header>
+
+    <div class="container">
+      <section id="donutInput">
+        <h2>Donut Count:</h2>
+        <input type="text" name="count" id="count" value="0" readonly>
+        <br />
+        <h2>Donuts Per Click:</h2>
+        <input type="text" name="earned" id="earned" value="0" readonly>
+        <audio id="myAudio">
+          <source src="/lib/mixkit-retro-game-notification-212.wav" type="audio/wav">
+        </audio>
+        <button id="donutClicker" onclick="playAudio()" type="button">Bake</button>
+      </section>
+
+      <section id="autoCountInput">
+        <h2>Auto Clickers:</h2>
+        <input type="text" name="autoCount" id="autoCount" value="0" readonly>
+        <br />
+        <h2>Auto Clicker Cost:</h2>
+        <input type="text" name="autoCost" id="autoCost" value="0" readonly>
+        <button id="autoClick" disabled>Buy Auto Clicker</button>
+      </section>
+
+      <section id="multiplierInput">
+        <h2>Multipliers:</h2>
+        <input type="text" name="multiplyCount" id="multiplyCount" value="0" readonly>
+        <br />
+        <h2>Multiplier Cost:</h2>
+        <input type="text" name="multiplyCost" id="multiplyCost" value="0" readonly>
+        <button id="multiplier" disabled>Buy Multiplier</button>
+      </section>
+    </div>
+      <footer>
+        <div id="resetInput">
+          <button id="resetButton">Reset Game</button>
+        </div>
+      </footer>
+
+<script src="/src/js/DonutMaker.js"></script>
+<script src="/src/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+* {
+    box-sizing: inherit;
+}
+
+  body {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+  }
+
+  .container{
+    display: flex;
+    margin: 0;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+img {
+  width: 180px;
+  height: auto;
+  object-fit: cover;
+  padding-bottom: 30px;
+}
+
+input {
+  text-align: center;
+  background: none;
+  font-size: 22px;
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+
+p {
+  font-family: 'Patrick Hand', cursive;
+}
+
+  h1 {
+    font-family: 'Pacifico';
+    position: relative;
+    margin: auto;
+    color: black;
+    text-align: center;
+    font-size: 44px;
+    max-width: 1250px;
+    position: relative;
+  }
+
+  h2 {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 18px;
+  }
+
+  h1:before {
+    content: "";
+    display: block;
+    width: 480px;
+    height: 3px;
+    background: #1d9bd6;
+    left: 0;
+    top: 50%;
+    position: absolute;
+  }
+
+  h1:after {
+    content: "";
+    display: block;
+    width: 480px;
+    height: 3px;
+    background: #1d9bd6;
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+
+#myBtn,
+#myBtn2,
+#myBtn3 {
+    display: inline-flex;
+    color: black;
+    font-weight: bold;
+    padding: 0;
+    margin-left: 30px;
+    margin-top: 50px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+  }
+
+  #myBtn:hover,
+  #myBtn2:hover,
+  #myBtn3:hover {
+    color:rgba(31, 31, 31, 0.801);
+  }
+
+  button {
+    padding: 15px;
+    border: none;
+    background: none;
+}
+
+  .header {
+      text-align: center;
+      height: 120px;
+      margin: 0px;
+      padding: 0px;
+  }
+
+  .nav {
+    display: flex;
+    padding: 0;
+    margin-left: 20px;
+  }
+
+  .donut-button img {
+    padding: 0;
+    width: 100px;
+    border-radius: 100px;
+  }
+
+  #donutClicker,
+  #autoClick,
+  #multiplier {
+      display: block;
+      margin: 30px;
+      align-items: center;
+      justify-content: center;
+      background: rgb(31, 149, 196);
+      font-size: 18px;
+      width: 170px;
+      height: 50px;
+      border-radius: 6px;
+      box-shadow: 0 8px 16px 0 rgba(99, 98, 98, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+  #donutClicker:hover,
+  #autoClick:hover,
+  #multiplier:hover {
+  background-color: rgba(31, 149, 196, 0.836);
+  }
+
+  #donutInput,
+  #autoCountInput,
+  #multiplierInput {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    margin: 4px;
+    padding-top: 20px;
+    width: 200px;
+    height: 220px;
+    background: rgb(103, 200, 238);
+
+  }
+
+  #resetButton {
+    align-items: center;
+    background: #9c9c9c;
+    border-radius: 6px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+#resetButton:hover {
+  background-color: rgb(162, 187, 199);
+}
+
+footer {
+  height: 120px;
+  margin-top: 150px;
+  align-items: center;
+}
+
+a {
+  color: rgb(243, 147, 214);
+  text-decoration: none;
+  padding: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #1ca0dd;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
